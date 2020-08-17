@@ -6,15 +6,26 @@ body h1 {
   font-weight: 700;
   line-height: 26.4px;
 }
+body h2 {
+  font-family: Raleway;
+  font-style: normal;
+  font-variant: normal;
+}
 body h3 {
+  font-family: Raleway;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
+body p {
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
   font-variant: normal;
-  font-weight: 700;
-  line-height: 15.4px;
+  font-weight: 400;
+  line-height: 20px;
 }
-body p {
+body label {
   font-family: Raleway;
   font-size: 14px;
   font-style: normal;
@@ -42,12 +53,33 @@ body .theme-font-serif p {
   margin-bottom: 0 !important;
 }
 
+.imgLogoIP {
+  margin-top: 53pt;
+}
+
+.field-icon {
+  float: right;
+  margin-right: 34px;
+  margin-top: -28px;
+  position: relative;
+  z-index: 2;
+}
+
+.input-width {
+  width: 90%;
+}
+
+.sectionLogin {
+  margin-left: 31pt;
+}
+
 #Home {
   margin-top: 150px;
 }
 
 #WellComeHome {
   font-size: x-large;
+  color: black;
 }
 
 #contentHome {
@@ -57,10 +89,11 @@ body .theme-font-serif p {
 #description {
   margin-bottom: 0 !important;
   line-height: 40px;
+  color: black;
 }
 
 .texthome {
-  margin-top: 147pt;
+  margin-top: 31pt;
 }
 
 #buttonStartHome {

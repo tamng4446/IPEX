@@ -1,17 +1,37 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPEx.Models.RegisterModel>
-@{
-    ViewBag.Title = "MemberRegistration";
-}
-<div>
-    @{ if (!Umbraco.MemberIsLoggedOn()) {
-            using (Html.BeginUmbracoForm("SubmitRegistration", "Member",System.Web.Mvc.FormMethod.Post, new { id = "register" }))
-            {
-                @Html.AntiForgeryToken()
-                @Html.LabelFor(m=>m.Name)
 
+@*<div>
+        @{ if (!Umbraco.MemberIsLoggedOn())
+            {
+                using (Html.BeginUmbracoForm("SubmitRegistration", "Member", System.Web.Mvc.FormMethod.Post, new { id = "register" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.LabelFor(m => m.Name)
+
+                }
             }
         }
-    }
-</div>
-<h2>MemberRegistration</h2>
+    </div>*@
+
+
+
+@* the fun starts here *@
+
+
+
+<section class="text-left texthome sectionLogin">
+
+    <h3 class="font-weight-bold">Create an account</h3>
+    <form style="margin-top:20px;" class="form-horizontal" method="" action="">
+
+        <label class="font-weight-bold">Email Address</label><br />
+        <input placeholder="Email Address" type="text" class="input-width form-control" /><br />
+
+        <label class="font-weight-bold">Password &nbsp; </label><br />
+        <input id="password-field" placeholder="Password" type="password" name="password" class="form-control input-width"> <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span><br />
+        <button class="btn btn-lg btn-primary btn-block " id="buttonStartHome" type="submit">Get Started</button>
+
+    </form>
+</section>
+<div style="margin-top:20px; text-align:center; font:16px;"> <label>Already have an account? </label> <a href="/Login">Sign In?</a></div>
 

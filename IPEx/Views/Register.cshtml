@@ -1,6 +1,11 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Register>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = "master.cshtml";
+        Layout = "master.cshtml";
+        var image = Model.Value<IPublishedContent>("SiteLogo");
+        ViewBag.Title = "Register";
+        
 }
-@{Html.RenderAction("MemberRegistration", "Member" );}
+    <div style="text-align: right; margin-right: 20px;margin-top: 21px;"><small>English</small></div>
+    <div class="text-center" sty> <img src="@image.Url" /></div>
+@{Html.RenderAction("MemberRegistration", "Member");}

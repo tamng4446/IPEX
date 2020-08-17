@@ -357,6 +357,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\appControll.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\HelpPage\Views\Web.config" />
@@ -424,13 +425,13 @@
     <Content Include="Views\Blogpost.cshtml" />
     <Content Include="Views\contact.cshtml" />
     <Content Include="Views\contentPage.cshtml" />
-    <Content Include="Views\home.cshtml" />
     <Content Include="Views\login.cshtml" />
     <Content Include="Views\master.cshtml" />
     <Content Include="Views\people.cshtml" />
     <Content Include="Views\Person.cshtml" />
     <Content Include="Views\Product.cshtml" />
     <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\home.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
