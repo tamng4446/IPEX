@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "master.cshtml";
+    var backgroundImage = Model.HeroBackgroundImage != null ? Model.HeroBackgroundImage.Url : String.Empty;
+    var listDescription = Model.HeroDescription.Split(new[] { "\r\n", "\r", "\n" }, StringSplitOptions.RemoveEmptyEntries);
+    
+}
+  <div  style= "text-align: right; margin-right: 20px;margin-top: 21px;"><small>English</small></div>
+<section  class="text-center texthome">
+  
+  
+    <p style="color:black;" id="WellComeHome"><strong>Welcom To</strong>   @Model.Wellcome™</p>
+    <div class="section__hero-content" id="contentHome" >
+  
+        
+        @foreach (var item in listDescription){
+            <p class="section__description" id="description" style="color:black;">@item</p>
+        }
+
+     
+    </div>
+         <button class="btn btn-lg btn-primary btn-block mx-auto" id="buttonStartHome" type="submit">Get Started</button>
+            <div style="margin-top:20px"><a href="/Login" id="LoginHome">Login</a></div> 
+</section>
+
+
+
+
+

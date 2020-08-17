@@ -1,0 +1,78 @@
+body h1 {
+  font-family: Raleway;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 26.4px;
+}
+body h3 {
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+  line-height: 15.4px;
+}
+body p {
+  font-family: Raleway;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+body blockquote {
+  font-family: Raleway;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+body pre {
+  font-family: Raleway;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5714px;
+}
+body .theme-font-serif p {
+  margin-bottom: 0 !important;
+}
+
+#Home {
+  margin-top: 150px;
+}
+
+#WellComeHome {
+  font-size: x-large;
+}
+
+#contentHome {
+  margin-top: 50px;
+}
+
+#description {
+  margin-bottom: 0 !important;
+  line-height: 40px;
+}
+
+.texthome {
+  margin-top: 147pt;
+}
+
+#buttonStartHome {
+  display: block;
+  width: 90%;
+  background-color: #007F9C;
+  border-radius: 0.6rem;
+  margin-top: 75px;
+}
+
+#LoginHome {
+  top: 511px;
+}
+
+/*# sourceMappingURL=Page_Style.css.map */

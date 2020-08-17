@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<IPEx.Models.RegisterModel>
+@{
+    ViewBag.Title = "MemberRegistration";
+}
+<div>
+    @{ if (!Umbraco.MemberIsLoggedOn()) {
+            using (Html.BeginUmbracoForm("SubmitRegistration", "Member",System.Web.Mvc.FormMethod.Post, new { id = "register" }))
+            {
+                @Html.AntiForgeryToken()
+                @Html.LabelFor(m=>m.Name)
+
+            }
+        }
+    }
+</div>
+<h2>MemberRegistration</h2>
+
