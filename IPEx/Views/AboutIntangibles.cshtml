@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.AboutIntangibles>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+    Layout = "master.cshtml";
+    var image = Model.Value<IPublishedContent>("SiteLogo");
+}
+<style>
+    .w3-blue{
+        height:1px;
+        width:80%;
+    }
+    #buttonStartHome {
+        width: 82%;
+    }
+</style>
+<div class="row">
+    <div style="margin-top:50pt; margin-left:37pt;">
+        <img width="50" height="50" src="@image.Url" />
+    </div>
+    <div style="margin-top:75pt; margin-left:20pt">
+        <p>About Intangibles</p>
+    </div>
+</div>
+<div class="w3-blue" style="margin-left:36.5px;" ><div id="myBar" class="w3-container w3-center" style="width:20%; background-color:blue; height:3px">20%</div></div>
+
+<h2 style="margin-top:81pt">@Model.HeaderTitle</h2>
+<img />
+<p>The closer they are to the centre of this diagram, the easier they are to protect and to exploit.</p>
+<h4>Intellectual Property (IP)</h4>
+<p>@Model.Des1</p>
+<h4>Intellectual Assets</h4>
+<p>@Model.Des2</p>
+<h4>Intellectual Capital</h4>
+<p>@Model.Des3</p>
+<p>@Model.DesFooter</p>
+<a class="btn btn-lg btn-primary btn-block " href="/your-bussiness" style="margin-left: 24pt;" id="buttonStartHome">Explore</a>
