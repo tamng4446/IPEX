@@ -8,3 +8,11 @@
         input.attr("type", "password");
     }
 });
+$(".btnCreate").click(function (e) {
+    e.preventDefault();
+    $(".pCreative").toggle();
+});
+$(".btnConsumer").click(function (e) {
+    e.preventDefault();
+    $(".pConsumer").toggle();
+});

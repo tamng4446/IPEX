@@ -433,6 +433,7 @@
     <Content Include="Views\Products.cshtml" />
     <Content Include="Views\home.cshtml" />
     <Content Include="Views\AboutIntangibles.cshtml" />
+    <Content Include="Views\YourBussiness.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

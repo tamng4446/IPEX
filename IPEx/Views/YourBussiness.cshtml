@@ -1,5 +1,103 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.YourBussiness>
 @using ContentModels = Umbraco.Web.PublishedModels;
 @{
-	Layout = null;
+    Layout = "master.cshtml";
+    var image = Model.Value<IPublishedContent>("SiteLogo");
 }
+<style>
+    .w3-blue {
+        height: 1px;
+        width: 80%;
+        background-color: #007F9C !important;
+    }
+
+    h3 {
+        margin: 0px;
+    }
+
+    .input-width {
+        width: 100%;
+    }
+
+    #buttonStartHome {
+        width: 100%;
+    }
+    .field-icon {
+ 
+        margin-right: 6px;
+    }
+</style>
+
+
+<div class="text-left" style="margin-left:37px; margin-right:37px; ">
+    <div style="display:flex">
+        <div style="margin-top:50px;">
+            <img width="50" height="50" src="@image.Url" />
+
+        </div>
+        <div style="margin-top:75px; margin-left:20px;">
+            <p>Your Business</p>
+        </div>
+    </div>
+    <div class="w3-blue">
+        <div id="myBar" class="w3-container w3-center" style="        width: 20%;
+        background-color: #007F9C;
+        height: 4px"></div>
+    </div>
+    <div><h3>@Model.Header</h3></div><br />
+    <div><p>@Model.Des1</p></div>
+
+    <label class="font-weight-bold">Email Address</label><br />
+    <input placeholder="Email Address" type="text" class="input-width form-control" /><br />
+
+    <label class="font-weight-bold">Password &nbsp; </label><br />
+    <input id="password-field" placeholder="Password" type="password" class="form-control input-width"> <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span><br />
+
+    <div><small>@Model.Des2</small></div>
+    <label class="font-weight-bold">Your Business Name</label><br />
+    <input placeholder="Business Name" type="text" class="input-width form-control" /><br />
+    <label class="font-weight-bold">
+        Your Business Sector & Subsector
+    </label><br />
+            <small>Please select one sector & subsector.</small>
+            <div style="text-align:center">
+                <button type="button" class="btn btn-outline-primary btnCreate "> Creative</button>
+                <div class="pCreative" style="overflow-x:auto;">
+                    <table style=" border-collapse: separate; border-spacing: 10px 10px;">
+                        <tr>
+                            <td class="border-IPE">Advertising & Media Services</td>
+                            <td class="border-IPE">TV, Broadcast, Radio & Cable</td>
+                            <td class="border-IPE">Visual Comms & Design</td>
+                            <td class="border-IPE">Publishing, Books & Magazines</td>
+
+                        </tr>
+                        <tr>
+                            <td class="border-IPE">Fashion Design</td>
+                            <td class="border-IPE">Interior Design</td>
+                            <td class="border-IPE">ISPs</td>
+                            <td class="border-IPE">Performing Arts</td>
+
+                        </tr>
+                    </table>
+                </div>
+                <button type="button" class="btn btn-outline-primary btnConsumer "> Consumer Goods</button>
+                <div class="pConsumer" style="overflow-x:auto;">
+                    <table style=" border-collapse: separate; border-spacing: 10px 10px;">
+                        <tr>
+                            <td class="border-IPE">Advertising & Media Services</td>
+                            <td class="border-IPE">TV, Broadcast, Radio & Cable</td>
+                            <td class="border-IPE">Visual Comms & Design</td>
+                            <td class="border-IPE">Publishing, Books & Magazines</td>
+
+                        </tr>
+                        <tr>
+                            <td class="border-IPE">Fashion Design</td>
+                            <td class="border-IPE">Interior Design</td>
+                            <td class="border-IPE">ISPs</td>
+                            <td class="border-IPE">Performing Arts</td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+</div>

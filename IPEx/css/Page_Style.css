@@ -108,4 +108,17 @@ body .theme-font-serif p {
   top: 511px;
 }
 
+.border-IPE {
+  height: 94px;
+  padding: 29px;
+  border: 1px solid #0094ff !important;
+  border-radius: 20px;
+  border-style: solid none;
+  text-align: center;
+}
+
+.btnCreate {
+  width: 100%;
+}
+
 /*# sourceMappingURL=Page_Style.css.map */
